@@ -1,2 +1,6 @@
 # t-SNE_and_UMAP_visuals
 t-SNE (pronounced tiz-knee), which stands for t-distributed Stochastic Neighbor Embedding was proposed much more recently by Laurens van der Maaten and Geoffrey Hinton in their 2008 paper. This works in a similar way to PCA but has some key differences:  Firstly, this is a stochastic method. So if you run multiple t-SNE plots on the same dataset it can look different. Another difference is that this is an iterative method. It works by repeatedly moving datapoints closer or further away from each other depending on how 'similar' they are. The new representation is non-linear. This makes it harder to interpret but it can be very effective at 'unravelling' highly non-linear data. The main downside to t-SNE is that is very slow compared to the other dimensionality techniques. This is because it makes calculations on a pair-wise basis, which does not scale well with large datasets.
+
+UMAP, which stands for Uniform Manifold Approximation and Projection was proposed by Leland McInnes, John Healy and James Melville in their 2018 paper.
+
+It is similar to t-SNE in that it learns a non-linear mapping that preserves clusters but its main advantage is that it is significantly faster. It also tends to do better at preserving global structure of the data compared to t-SNE.
